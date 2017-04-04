@@ -9,7 +9,9 @@
 
 
 #### FUNCTIONS #############################
+
 shapiro_test <- function(dataframe) {
+	
 	for(i in 1:ncol(df)){
 	ans <- shapiro.test(df[ ,i])
 	if (ans[2]>0.05) {
